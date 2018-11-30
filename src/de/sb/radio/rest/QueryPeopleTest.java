@@ -5,7 +5,6 @@ package de.sb.radio.rest;
 
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import javax.ws.rs.client.WebTarget;
@@ -38,10 +37,10 @@ public class QueryPeopleTest extends ServiceTest {
 //				.request(MediaType.APPLICATION_JSON_TYPE).get(new GenericType<List<Person>>() {});
 		
 		// there should be only one "ines"
-		assertEquals(1, people.size());
+		assertEquals("Size:", 1, people.size());
 		
 		// forename should be "ines" -> get Person in List at position 0 (we should have only 1)
-		assertEquals("Ines", people.get(0).getForename());
+		assertEquals("Forname:", "Ines", people.get(0).getForename());
 	}
 		
 }
