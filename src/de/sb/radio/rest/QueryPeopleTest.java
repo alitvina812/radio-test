@@ -5,7 +5,6 @@ package de.sb.radio.rest;
 
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import javax.ws.rs.client.WebTarget;
